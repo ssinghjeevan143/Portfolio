@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Jeevan Singh Rajput — Portfolio</title>
+  <meta name="description" content="Jeevan Singh Rajput — Java Full Stack Developer | Projects, Skills, Contact" />
+  <style>
+    :root{--accent:#1565c0;--bg:#0f1720;--card:#0b1220;--muted:#9aa6b2;--glass:rgba(255,255,255,0.03)}
+    *{box-sizing:border-box}
+    body{font-family:Inter,Segoe UI,Roboto,Helvetica,Arial,sans-serif;margin:0;background:linear-gradient(180deg,#071024 0%,#071728 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1000px;margin:40px auto;padding:24px}
+    header{display:flex;align-items:center;gap:16px}
+    .avatar{width:88px;height:88px;border-radius:14px;flex:0 0 88px;background:linear-gradient(135deg,var(--accent),#6fb1ff);display:grid;place-items:center;font-weight:700;color:#042233}
+    h1{margin:0;font-size:1.6rem}
+    p.lead{margin:6px 0 0;color:var(--muted)}
+    .hero{display:flex;flex-wrap:wrap;justify-content:space-between;gap:18px;margin-top:18px}
+    .cards{display:flex;gap:12px;flex-wrap:wrap}
+    .card{background:var(--card);padding:14px;border-radius:12px;box-shadow:0 6px 20px rgba(2,6,23,0.6);min-width:220px}
+    .skills{display:flex;flex-wrap:wrap;gap:8px}
+    .skill{background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:0.9rem}
+    main{margin-top:28px}
+    section{margin-bottom:28px}
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:12px}
+    .project{background:linear-gradient(180deg,rgba(255,255,255,0.02),transparent);padding:12px;border-radius:10px}
+    .project h3{margin:0 0 8px;font-size:1rem}
+    .project p{margin:0 0 10px;color:var(--muted);font-size:0.92rem}
+    .btn{display:inline-block;padding:8px 12px;border-radius:8px;background:var(--accent);color:white;text-decoration:none;font-weight:600}
+    .grid-2{display:grid;grid-template-columns:1fr 320px;gap:16px}
+    .contact-card{background:var(--card);padding:16px;border-radius:12px}
+    footer{margin-top:36px;color:var(--muted);font-size:0.88rem;text-align:center}
+    .tags{display:flex;gap:8px;flex-wrap:wrap}
+    .tag{background:rgba(255,255,255,0.03);padding:6px 8px;border-radius:8px;color:var(--muted);font-size:0.88rem}
+    /* responsive */
+    @media (max-width:880px){.grid-2{grid-template-columns:1fr}.avatar{width:72px;height:72px}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="avatar">JS</div>
+      <div>
+        <h1>Jeevan Singh Rajput</h1>
+        <p class="lead">Java Full-Stack Developer • Building clean, simple Java & Spring apps • Learning front-end & deployment</p>
+        <div style="margin-top:10px" class="tags">
+          <div class="tag">Java</div>
+          <div class="tag">Spring Boot</div>
+          <div class="tag">MySQL</div>
+          <div class="tag">HTML/CSS</div>
+          <div class="tag">GitHub</div>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="cards">
+          <div class="card">
+            <h3>About Me</h3>
+            <p style="color:var(--muted);margin:8px 0 0">I build simple, maintainable Java applications and practise full-stack workflows. I focus on backend logic, databases and clean code. I'm learning frontend and deployment to become a confident full-stack developer.</p>
+          </div>
+          <div class="card">
+            <h3>Quick Stats</h3>
+            <p style="margin:8px 0 6px;color:var(--muted)">Experience: Student / Fresher</p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap">
+              <div class="skill">Projects: 3</div>
+              <div class="skill">Languages: Java, SQL</div>
+              <div class="skill">Tools: IntelliJ, Git</div>
+            </div>
+          </div>
+        </div>
+        <div style="min-width:260px;align-self:start">
+          <div class="card">
+            <h3>Contact</h3>
+            <p style="color:var(--muted);margin:6px 0">Email: <a class="btn" href="mailto:youremail@example.com">s.singhjeevan1234@gmail.com</a></p>
+            <p style="margin:8px 0 0"><a class="btn" href="#projects">View Projects</a></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2 style="margin:0 0 12px">Projects</h2>
+        <div class="projects">
+          <article class="project">
+            <h3>Car Rental System (Console)</h3>
+            <p>A simple Java console project for renting cars (Customer, Car, Main). Features: add customers, list cars, book/return.</p>
+            <p><a class="btn" href="https://github.com/yourusername/CarRentalSystem" target="_blank">View on GitHub</a></p>
+          </article>
+
+          <article class="project">
+            <h3>Personal Website</h3>
+            <p>Single-file responsive portfolio built with HTML and CSS. Deployed on GitHub Pages.</p>
+            <p><a class="btn" href="#" target="_blank">Live Demo</a></p>
+          </article>
+
+          <article class="project">
+            <h3>Mini ML Experiment</h3>
+            <p>Data analysis and a small model using Python — exploratory work from college project.</p>
+            <p><a class="btn" href="#">View Code</a></p>
+          </article>
+        </div>
+      </section>
+
+      <div class="grid-2">
+        <section>
+          <h2 style="margin:0 0 12px">Skills</h2>
+          <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:10px">
+            <div class="card">
+              <h4 style="margin:0">Backend</h4>
+              <p style="color:var(--muted);margin-top:8px">Java, Spring Boot (learning), REST APIs, JDBC, MySQL</p>
+            </div>
+            <div class="card">
+              <h4 style="margin:0">Frontend</h4>
+              <p style="color:var(--muted);margin-top:8px">HTML, CSS, Basic JavaScript — learning frameworks like React</p>
+            </div>
+            <div class="card">
+              <h4 style="margin:0">Tools</h4>
+              <p style="color:var(--muted);margin-top:8px">IntelliJ, Git, GitHub, Maven</p>
+            </div>
+            <div class="card">
+              <h4 style="margin:0">Soft Skills</h4>
+              <p style="color:var(--muted);margin-top:8px">Problem-solving, teamwork, quick learner</p>
+            </div>
+          </div>
+        </section>
+
+        <aside class="contact-card">
+          <h3>Get in touch</h3>
+          <p style="color:var(--muted)">Replace the email below with your real email so recruiters can contact you.</p>
+          <p style="margin:10px 0"><strong>Email:</strong> s.singhjeevan1234@gmail.com</p>
+          <p style="margin:10px 0"><strong>GitHub:</strong> <a href="https://github.com/yourusername" target="_blank">github.com/ssinghjeevan143</a></p>
+          <p style="margin-top:14px">Want this page hosted? Push this file to a GitHub repo and enable <strong>GitHub Pages</strong> (branch: gh-pages or main) — your portfolio will be live.</p>
+        </aside>
+      </div>
+
+      <footer>
+        <p>Made with ❤️ • Java Learner Portfolio •</p>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>
